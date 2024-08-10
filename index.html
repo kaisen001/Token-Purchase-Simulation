@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Energy Simulation - Eneo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-left">
+            <img src="eneo_logo.png" alt="Eneo Logo" class="logo">
+        </div>
+        <nav class="navbar">
+            <a href="#">Accueil</a>
+            <a href="#">Infos</a>
+            <a href="#">Service</a>
+            <a href="#">Electricité</a>
+            <a href="#">Eneo Prepayé</a>
+            <a href="#">FAQ</a>
+            <a href="#">Contact</a>
+        </nav>
+        <div class="header-right">
+            <div class="language-switch">
+                <img src="Brit.png" alt="English" class="flag-icon">
+                <span>ENG</span>
+            </div>
+            <div class="menu-icon">
+                <img src="menu_icon.png" alt="Menu">
+            </div>
+        </div>
+    </header>
+
+    <main class="content">
+        <div class="banner">
+            <img src="eneo.png" alt="Banner Image" class="banner-image">
+        </div>
+
+        <div class="main">
+            
+            <div class="simulation-form">
+                <h3>Energy Simulation!</h3>
+                <label for="meterNumber">Meter Number:</label>
+                <input type="text" id="meterNumber">
+                <label for="amount">Amount:</label>
+                <input type="number" id="amount" oninput="calculateEnergy()">
+                <label for="energy">Energy to be consumed (KW):</label>
+                <input type="text" id="energy" readonly>
+                <button onclick="simulate()">Energy simulation</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-icons">
+                <p>Suivi de vos demandes, Facture électronique, Réclamations en ligne, Travaux & Incidents</p>
+            </div>
+            <div class="footer-contact">
+                <p>Siège Social : Bonanjo Avenue Charles de Gaulle - B.P : 4077 Douala Cameroun</p>
+                <p>RCCM Douala n° RC/DLA/1974/B/624</p>
+                <p>Contacts : +237 233 43 03 25 / +237 233 43 09 30 / +237 233 43 09 31</p>
+            </div>
+            <p>© Eneo Cameroon S.A. 2015 - Tous droits réservés</p>
+        </div>
+    </footer>
+
+    <script>
+        function calculateEnergy() {
+            const amount = document.getElementById('amount').value;
+            const energy = amount / 10; // Example conversion
+            document.getElementById('energy').value = energy ? energy + ' kW' : '';
+        }
+
+        function simulate() {
+            // Add your simulation logic here
+        }
+    </script>
+</body>
+</html>

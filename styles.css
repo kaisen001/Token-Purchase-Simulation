@@ -1,0 +1,165 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #b9f281; /* Matching the green background in the image */
+}
+
+.header {
+    background-color: #6e5c7e;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-left, .header-right {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 50px;
+    margin-left: 15px;
+}
+
+.navbar {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+.navbar a {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+.language-switch {
+    display: flex;
+    align-items: center;
+}
+
+.flag-icon {
+    height: 20px;
+    margin-right: 5px;
+}
+
+.menu-icon img {
+    height: 20px;
+    margin-left: 10px;
+}
+
+.content {
+    display: flex;
+    padding: 20px;
+    background-color: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.banner {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-image {
+    max-width: 80%;
+    height: auto;
+    padding: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.main {
+    flex: 1;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    margin-left: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.main h2 {
+    color: #4b4b4b;
+    font-size: 24px;
+}
+
+.main p {
+    color: #4b4b4b;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.main ul {
+    padding-left: 20px;
+    color: #4b4b4b;
+    font-size: 16px;
+}
+
+.simulation-form {
+    margin-top: 20px;
+    background-color: #e5f4b7;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.simulation-form h3 {
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.simulation-form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.simulation-form input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.simulation-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.simulation-form button:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    background-color: #6e5c7e;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+.footer-content {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.footer-icons {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+
+.footer-contact p {
+    margin: 5px 0;
+}
